@@ -222,15 +222,15 @@ int main()
    flow.addNode('d');
    flow.addNode('e');
    flow.addNode('f');
-   flow.addNode('g');
 
-   flow.addEdge('a','b', 3);
-   flow.addEdge('b','c', 2);
-   flow.addEdge('c','d', 2);
-   flow.addEdge('a','e', 2);
-   flow.addEdge('e','f', 1);
-   flow.addEdge('f','d', 2);
-   flow.addEdge('d','g', 5);
+
+   flow.addEdge('a','b', 4);
+   flow.addEdge('b','c', 4);
+   flow.addEdge('c','d', 4);
+   flow.addEdge('b','e', 4);
+   flow.addEdge('e','d', 4);
+   flow.addEdge('a','f', 4);
+   flow.addEdge('f','c', 4);
 
 
    int max = flow.countMaxFlow('a', 'g');
